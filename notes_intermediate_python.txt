@@ -1,0 +1,8 @@
+- less (you can scroll)
+- wc file (word count)
+- . (dot run a bash script)
+- python -m pip show matplotlib
+- python -m pip list
+- python -m pip freeze
+- python -m pip freeze > requirements.txt
+- git diff
