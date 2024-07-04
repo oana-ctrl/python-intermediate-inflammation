@@ -56,9 +56,15 @@ def test_daily_max_integers(test,expected):
     # Need to use Numpy testing functions to compare arrays
     npt.assert_array_equal(daily_max(np.array(test)), np.array(expected))
 
-def test_daily_min_string():
+
+@pytest.mark.parametrize(
+    "test",
+    [
+        ([['Hello', 'there'], ['General', 'Kenobi']]),
+    ])
+def test_daily_min_string(test):
     """Test for TypeError when passing strings"""
     from inflammation.models import daily_min
 
     with pytest.raises(TypeError):
-        error_expected = daily_min([['Hello', 'there'], ['General', 'Kenobi']])
+        error_expected = daily_min(test)
