@@ -1,6 +1,10 @@
 # Same key-value pairs as in "Defining Our Workflow" section
 name: CI
+
+# We can specify which Github events will trigger a CI build
 on: push
+
+# now define a single job 'build' (but could define more)
 jobs:
   build:
 
@@ -31,4 +35,4 @@ jobs:
         python3 -m pip install -r requirements.txt
     - name: Test with PyTest
       run: |
-        python3 -m pytest --cov=catchment.models tests/test_models.py
+        python3 -m pytest --cov=inflammation.models tests/test_models.py
