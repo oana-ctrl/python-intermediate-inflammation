@@ -13,4 +13,5 @@
 *.egg-info
 .pytest_cache
 
+# Ignore virual environment
 venv

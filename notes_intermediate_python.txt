@@ -1,0 +1,13 @@
+- less (you can scroll)
+- wc file (word count)
+- . (dot run a bash script)
+- python -m pip show matplotlib
+- python -m pip list
+- python -m pip freeze
+- python -m pip freeze > requirements.txt
+- git diff
+
+
+- git branch (current branch)
+- git branch develop (create branch)
+- git switch develop (switch current branch)
